@@ -1,121 +1,63 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
+import Header from './components/Header'
+import Section from './components/Section'
+import ProjectCard from './components/ProjectCard'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <section id="center">
-        <div className="hero">
-          <img src={heroImg} className="base" width="170" height="179" alt="" />
-          <img src={reactLogo} className="framework" alt="React logo" />
-          <img src={viteLogo} className="vite" alt="Vite logo" />
-        </div>
-        <div>
-          <h1>Get started</h1>
+    <div className="app">
+      <Header />
+
+      <main>
+        <Section title="About me">
           <p>
-            Edit <code>src/App.jsx</code> and save to test <code>HMR</code>
+            I am a web developer with experience in React, SharePoint,
+            Microsoft 365 environments, and process automation. I enjoy solving
+            problems, learning continuously, and creating solutions that bring
+            real value to users.
           </p>
-        </div>
-        <button
-          type="button"
-          className="counter"
-          onClick={() => setCount((count) => count + 1)}
-        >
-          Count is {count}
-        </button>
-      </section>
+        </Section>
 
-      <div className="ticks"></div>
+        <Section title="Projects">
+          <div className="projects-grid">
+            <ProjectCard
+              title="Ski Weather App"
+              status="In progress"
+              tech="Django, JavaScript, Leaflet, Open-Meteo API"
+              description="A web application to explore ski resorts in Catalunya, including interactive maps and weather information."
+              details="This project was built using Django for the backend and JavaScript with Leaflet for the frontend. It fetches weather data from the Open-Meteo API to provide real-time weather information for ski resorts."
+            />
 
-      <section id="next-steps">
-        <div id="docs">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#documentation-icon"></use>
-          </svg>
-          <h2>Documentation</h2>
-          <p>Your questions, answered</p>
-          <ul>
-            <li>
-              <a href="https://vite.dev/" target="_blank">
-                <img className="logo" src={viteLogo} alt="" />
-                Explore Vite
-              </a>
-            </li>
-            <li>
-              <a href="https://react.dev/" target="_blank">
-                <img className="button-icon" src={reactLogo} alt="" />
-                Learn more
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div id="social">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#social-icon"></use>
-          </svg>
-          <h2>Connect with us</h2>
-          <p>Join the Vite community</p>
-          <ul>
-            <li>
-              <a href="https://github.com/vitejs/vite" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#github-icon"></use>
-                </svg>
-                GitHub
-              </a>
-            </li>
-            <li>
-              <a href="https://chat.vite.dev/" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#discord-icon"></use>
-                </svg>
-                Discord
-              </a>
-            </li>
-            <li>
-              <a href="https://x.com/vite_js" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#x-icon"></use>
-                </svg>
-                X.com
-              </a>
-            </li>
-            <li>
-              <a href="https://bsky.app/profile/vite.dev" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#bluesky-icon"></use>
-                </svg>
-                Bluesky
-              </a>
-            </li>
-          </ul>
-        </div>
-      </section>
+            <ProjectCard
+              title="Multilingual Website"
+              status="Completed"
+              tech="WordPress, Elementor, Polylang, HTML/CSS"
+              description="A freelance project where I designed and built a multilingual website from scratch."
+              details="The website was built using WordPress with the Elementor page builder and the Polylang plugin for multilingual support. I focused on creating a user-friendly design and ensuring that the site was responsive across different devices."
+            />
 
-      <div className="ticks"></div>
-      <section id="spacer"></section>
-    </>
+            <ProjectCard
+              title="Microsoft 365 Solutions"
+              status="Completed"
+              tech="SharePoint Online, SPFx, React, Power Automate"
+              description="Development and automation work in Microsoft 365 environments, focused on improving internal processes and user experience."
+              details="I have developed custom solutions using SharePoint Framework (SPFx) and React, as well as automated workflows using Power Automate. These solutions aimed to streamline internal processes, enhance collaboration, and improve the overall user experience within Microsoft 365 environments."
+            />
+          </div>
+        </Section>
+
+        <Section title="Skills">
+          <p>
+            React, JavaScript, HTML, CSS, Django, Python, SharePoint Online,
+            Power Automate, Git, and Microsoft 365.
+          </p>
+        </Section>
+
+        <Section title="Contact">
+          <p>You can contact me through LinkedIn, GitHub, or email.</p>
+        </Section>
+      </main>
+    </div>
   )
 }
 
