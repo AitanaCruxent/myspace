@@ -1,5 +1,6 @@
 import Header from './components/Header'
 import Section from './components/Section'
+import Skills from './components/Skills'
 import ProjectCard from './components/ProjectCard'
 import './App.css'
 
@@ -17,6 +18,8 @@ function App() {
             real value to users.
           </p>
         </Section>
+
+        <Skills />
 
         <Section title="Projects">
           <div className="projects-grid">

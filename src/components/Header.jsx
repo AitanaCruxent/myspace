@@ -7,8 +7,9 @@ function Header() {
         <span className="logo">ACM</span>
 
         <div className="nav-links">
-          <a href="#projects">Projects</a>
-          <a href="#about">About</a>
+          <a href="#projects">About</a>
+          <a href="#projects">Skills</a>
+          <a href="#about">Projects</a>
           <a href="#contact">Contact</a>
         </div>
       </nav>
@@ -26,7 +27,7 @@ function Header() {
 
           <p className="hero-description">
             I combine analytical thinking and creativity to build clean,
-            useful and user-focused digital experiences.
+            useful and user-focused digital experiences. I consider myself as a generalist at the moment, but I am particulary interested in web development.
           </p>
 
           <div className="hero-links-row">
@@ -40,11 +41,11 @@ function Header() {
             </div>
 
             <div className="hero-socials">
-              <a href="https://github.com/" target="_blank" rel="noreferrer">
+              <a href="https://github.com/AitanaCruxent" target="_blank" rel="noreferrer">
                 GitHub
               </a>
               <span>·</span>
-              <a href="https://linkedin.com/" target="_blank" rel="noreferrer">
+              <a href="https://www.linkedin.com/in/aitana-cruxent-m%C3%A1rquez-71a911223/" target="_blank" rel="noreferrer">
                 LinkedIn
               </a>
             </div>
