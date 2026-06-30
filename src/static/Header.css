@@ -1,0 +1,377 @@
+/* =========================
+   HEADER / HERO
+========================= */
+
+.hero {
+  min-height: 100vh;
+  padding: 25px 8% 32px;
+  color: #10231c;
+  background:
+    radial-gradient(circle at top left, rgba(52, 211, 153, 0.24), transparent 32%),
+    radial-gradient(circle at bottom right, rgba(20, 184, 166, 0.18), transparent 34%),
+    linear-gradient(135deg, #f7fbf7 0%, #edf7f0 48%, #dfeee6 100%);
+  overflow: hidden;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 90px;
+}
+
+.logo {
+  width: 50px;
+  height:50px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-weight: 700;
+  color: #ffffff;
+  background: #10b981;
+ 
+  box-shadow: 0 8px 24px rgba(18, 55, 42, 0.08);
+}
+
+.nav-links {
+  display: flex;
+  gap: 28px;
+}
+
+.nav-links a {
+  color: #4f6f61;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.nav-links a:hover {
+  color: #059669;
+}
+
+/* =========================
+   HERO LAYOUT
+========================= */
+
+.hero-content {
+  display: grid;
+  grid-template-columns: 1.25fr 0.75fr;
+  align-items: center;
+  gap: 50px;
+}
+
+.hero-text {
+  max-width: 760px;
+  justify-self: center;
+}
+
+.eyebrow {
+  color: #059669;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  margin-bottom: 18px;
+}
+
+.hero-text h1 {
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  line-height: 0.95;
+  margin: 0;
+  color: #10231c;
+  letter-spacing: -0.06em;
+}
+
+.hero-text h2 {
+  margin-top: 24px;
+  font-size: clamp(1.1rem, 2vw, 1.45rem);
+  color: #2f4f43;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.hero-description {
+  max-width: 620px;
+  margin-top: 24px;
+  font-size: 1.15rem;
+  line-height: 1.7;
+  color: #5f746b;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+
+.hero-actions {
+  display: flex;
+  gap: 16px;
+  margin-top: 36px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 14px 22px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 700;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    background 0.2s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+.btn-primary {
+  background: #10b981;
+  color: #ecfdf5;
+  box-shadow: 0 16px 40px rgba(16, 185, 129, 0.28);
+}
+
+.btn-primary:hover {
+  background: #059669;
+}
+
+.btn-secondary {
+  color: #12372a;
+  border: 1px solid rgba(18, 55, 42, 0.12);
+  background: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 12px 30px rgba(18, 55, 42, 0.06);
+}
+
+.btn-secondary:hover {
+  background: rgba(236, 253, 245, 0.95);
+}
+
+/* =========================
+   SOCIAL LINKS
+========================= */
+
+.hero-socials {
+  display: flex;
+  gap: 10px;
+  margin-top: 30px;
+  color: #8ba098;
+}
+
+.hero-socials a {
+  color: #4f6f61;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.hero-socials a:hover {
+  color: #059669;
+}
+
+/* =========================
+   ABSTRACT HERO VISUAL
+========================= */
+
+.hero-visual {
+  position: relative;
+  min-height: 420px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.visual-orb {
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  background:
+    radial-gradient(circle at 30% 28%, rgba(255, 255, 255, 0.95), transparent 22%),
+    linear-gradient(135deg, rgba(16, 185, 129, 0.36), rgba(20, 184, 166, 0.18));
+  box-shadow:
+    0 40px 100px rgba(16, 185, 129, 0.22),
+    inset 0 0 60px rgba(255, 255, 255, 0.45);
+  animation: floatOrb 6s ease-in-out infinite;
+}
+
+.visual-card {
+  position: absolute;
+  width: 220px;
+  padding: 10px;
+  border-radius: 24px;
+  box-shadow: 0 24px 70px rgba(18, 55, 42, 0.14);
+  backdrop-filter: blur(18px);
+  text-align: center;
+}
+
+.visual-card span {
+  display: block;
+  margin-bottom: 8px;
+  color: #5f746b;
+  font-size: 0.9rem;
+}
+
+.visual-card strong {
+  color: #10231c;
+  font-size: 1.15rem;
+}
+
+.floating-tag {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  padding: 10px 14px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.72);
+  border: 1px solid rgba(18, 55, 42, 0.08);
+  color: #047857;
+  font-weight: 700;
+  font-size: 0.9rem;
+  box-shadow: 0 14px 36px rgba(18, 55, 42, 0.1);
+  backdrop-filter: blur(12px);
+
+  transform: translate(-50%, -50%) translate(var(--x), var(--y));
+  animation: floatTag 5s ease-in-out infinite;
+}
+
+.tag-react {
+  --x: -150px;
+  --y: -105px;
+}
+
+.tag-django {
+  --x: 150px;
+  --y: -80px;
+  animation-delay: 0.4s;
+}
+
+.tag-dotnet {
+  --x: -150px;
+  --y: 90px;
+  animation-delay: 0.8s;
+}
+
+.tag-sql {
+  --x: 130px;
+  --y: 110px;
+  animation-delay: 1.2s;
+}
+/* =========================
+   ANIMATIONS
+========================= */
+
+@keyframes floatOrb {
+  0%,
+  100% {
+    transform: translateY(0) scale(1);
+  }
+
+  50% {
+    transform: translateY(-14px) scale(1.03);
+  }
+}
+
+@keyframes floatTag {
+  0%,
+  100% {
+    transform: translate(-50%, -50%) translate(var(--x), var(--y));
+  }
+
+  50% {
+    transform: translate(-50%, -50%) translate(var(--x), calc(var(--y) - 8px));
+  }
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 950px) {
+  .hero {
+    min-height: auto;
+    padding: 24px 6% 72px;
+  }
+
+  .navbar {
+    margin-bottom: 64px;
+  }
+
+  .hero-content {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+
+  .hero-text {
+    max-width: 100%;
+  }
+
+  .hero-visual {
+    min-height: 340px;
+  }
+
+  .visual-orb {
+    width: 240px;
+    height: 240px;
+  }
+
+  .visual-card {
+    width: 210px;
+  }
+
+  .tag-react {
+    top: 28px;
+    left: 28px;
+  }
+
+  .tag-django {
+    top: 56px;
+    right: 20px;
+  }
+
+  .tag-dotnet {
+    bottom: 64px;
+    left: 20px;
+  }
+
+  .tag-sql {
+    bottom: 30px;
+    right: 50px;
+  }
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    align-items: flex-start;
+    gap: 24px;
+  }
+
+  .nav-links {
+    gap: 16px;
+    font-size: 0.9rem;
+  }
+
+  .hero-text h1 {
+    font-size: clamp(3rem, 18vw, 4.5rem);
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .btn {
+    width: fit-content;
+  }
+
+  .hero-visual {
+    min-height: 300px;
+  }
+
+  .floating-tag {
+    font-size: 0.8rem;
+    padding: 8px 12px;
+  }
+}
