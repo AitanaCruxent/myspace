@@ -462,11 +462,11 @@
   .visual-card {
     top: 86%;
     left: 6%;
-    width: 130px;
+    width: 140px;
     padding: 4px 2px;
   }
 
   .visual-card strong {
-    font-size: 0.55rem;
+    font-size: 0.60rem;
   }
 }
