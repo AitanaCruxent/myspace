@@ -329,7 +329,6 @@
   background-position: center;
   background-size: contain;
   opacity: 0.14;
-  filter: blur(0.2px);
   pointer-events: none;
   z-index: 0;
 }
@@ -441,9 +440,17 @@
 
 @media (max-width: 600px) {
   .hero-visual {
-    width: min(100vw, 460px);
+    width: min(90vw, 380px);
     aspect-ratio: 1.55 / 1;
-    min-height: auto;
+    margin-inline: auto;
+    overflow: visible;
+  }
+
+  .fibonacci-layer {
+    background-size: 90%;
+    background-position: center;
+    opacity: 0.2;
+    filter: none;
   }
 
   .floating-tag {
