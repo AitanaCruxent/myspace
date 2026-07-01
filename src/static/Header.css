@@ -222,13 +222,20 @@
   top: 50%;
   left: 50%;
 
-  padding: 10px 14px;
+  width: 48px;
+  height: 48px;
+  padding: 0;
   border-radius: 999px;
-  background: rgba(255, 255, 255, 0.13);
+
+  display: grid;
+  place-items: center;
+
+  background: rgba(255, 255, 255, 0.185);
   border: 1px solid rgba(18, 55, 42, 0.08);
   color: #047857;
-  font-weight: 700;
-  font-size: 0.9rem;
+
+  font-size: 1.35rem;
+
   box-shadow: 0 14px 36px rgba(18, 55, 42, 0.1);
   backdrop-filter: blur(12px);
 
@@ -237,25 +244,35 @@
 }
 
 .tag-react {
-  --x: -150px;
-  --y: -105px;
+  --x: -135px;
+  --y: -100px;
+}
+
+.tag-python {
+  --x: -30px;
+  --y: 135px;
 }
 
 .tag-django {
-  --x: 150px;
-  --y: -80px;
+  --x: 60px;
+  --y: -140px;
   animation-delay: 0.4s;
+}
+
+.tag-html {
+  --x: 150px;
+  --y: -20px;
 }
 
 .tag-dotnet {
   --x: -150px;
-  --y: 90px;
+  --y: 50px;
   animation-delay: 0.8s;
 }
 
 .tag-sql {
-  --x: 130px;
-  --y: 110px;
+  --x: 120px;
+  --y: 100px;
   animation-delay: 1.2s;
 }
 /* =========================

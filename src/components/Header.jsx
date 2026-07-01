@@ -1,4 +1,7 @@
+import { SiReact, SiDjango, SiDotnet, SiPython, SiHtml5 } from "react-icons/si";
+import { FaDatabase } from "react-icons/fa";
 import "../static/Header.css";
+
 
 function Header() {
   return (
@@ -55,11 +58,29 @@ function Header() {
         <div className="hero-visual" aria-hidden="true">
           <div className="visual-orb"></div>
 
-          <div className="floating-tag tag-react">React</div>
-          <div className="floating-tag tag-django">Django</div>
-          <div className="floating-tag tag-dotnet">.NET</div>
-          <div className="floating-tag tag-sql">SQL</div>
+          <div className="floating-tag tag-react" aria-label="React">
+            <SiReact />
+          </div>
 
+          <div className="floating-tag tag-django" aria-label="Django">
+            <SiDjango />
+          </div>
+
+          <div className="floating-tag tag-dotnet" aria-label=".NET">
+            <SiDotnet />
+          </div>
+
+          <div className="floating-tag tag-sql" aria-label="SQL">
+            <FaDatabase />
+          </div>
+
+          <div className="floating-tag tag-python" aria-label="Python">
+            <SiPython />
+          </div>
+
+          <div className="floating-tag tag-html" aria-label="HTML">
+            <SiHtml5 />
+          </div>
           <div className="visual-card">
             <span>Web solutions</span>
             <strong>Logic + creativity</strong>

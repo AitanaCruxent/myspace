@@ -19,7 +19,7 @@ function App() {
           </p>
         </Section>
 
-        <Skills />
+        <Skills /> 
 
         <Section title="Projects">
           <div className="projects-grid">
