@@ -21,8 +21,8 @@ function App() {
 
         <Skills /> 
 
-        <Section title="Projects">
-          <div className="projects-grid">
+        <Section title="Projects" >
+          <div className="projects-grid" id="projects">
             <ProjectCard
               title="Ski Weather App"
               status="In progress"
@@ -47,13 +47,6 @@ function App() {
               details="I have developed custom solutions using SharePoint Framework (SPFx) and React, as well as automated workflows using Power Automate. These solutions aimed to streamline internal processes, enhance collaboration, and improve the overall user experience within Microsoft 365 environments."
             />
           </div>
-        </Section>
-
-        <Section title="Skills">
-          <p>
-            React, JavaScript, HTML, CSS, Django, Python, SharePoint Online,
-            Power Automate, Git, and Microsoft 365.
-          </p>
         </Section>
 
         <Section title="Contact">

@@ -13,6 +13,14 @@
   overflow: hidden;
 }
 
+.message {
+  color: #059669;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
 /* =========================
    NAVBAR
 ========================= */
@@ -338,24 +346,34 @@
   }
 
   .tag-react {
-    top: 28px;
-    left: 28px;
-  }
+  --x: -115px;
+  --y: -85px;
+}
 
-  .tag-django {
-    top: 56px;
-    right: 20px;
-  }
+.tag-python {
+  --x: -25px;
+  --y: 115px;
+}
 
-  .tag-dotnet {
-    bottom: 64px;
-    left: 20px;
-  }
+.tag-django {
+  --x: 50px;
+  --y: -118px;
+}
 
-  .tag-sql {
-    bottom: 30px;
-    right: 50px;
-  }
+.tag-html {
+  --x: 125px;
+  --y: -15px;
+}
+
+.tag-dotnet {
+  --x: -125px;
+  --y: 45px;
+}
+
+.tag-sql {
+  --x: 100px;
+  --y: 85px;
+}
 }
 
 @media (max-width: 600px) {
@@ -387,7 +405,39 @@
   }
 
   .floating-tag {
-    font-size: 0.8rem;
-    padding: 8px 12px;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    font-size: 1.05rem;
+  }
+
+  .tag-react {
+    --x: -95px;
+    --y: -72px;
+  }
+
+  .tag-python {
+    --x: -20px;
+    --y: 96px;
+  }
+
+  .tag-django {
+    --x: 42px;
+    --y: -98px;
+  }
+
+  .tag-html {
+    --x: 103px;
+    --y: -12px;
+  }
+
+  .tag-dotnet {
+    --x: -103px;
+    --y: 38px;
+  }
+
+  .tag-sql {
+    --x: 82px;
+    --y: 72px;
   }
 }

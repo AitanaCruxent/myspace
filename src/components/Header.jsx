@@ -1,5 +1,5 @@
 import { SiReact, SiDjango, SiDotnet, SiPython, SiHtml5 } from "react-icons/si";
-import { FaDatabase } from "react-icons/fa";
+import { FaDatabase, FaTools } from "react-icons/fa";
 import "../static/Header.css";
 
 
@@ -9,10 +9,12 @@ function Header() {
       <nav className="navbar">
         <span className="logo">ACM</span>
 
+        <p className="message">This web is still underconstuction <FaTools /></p>
+
         <div className="nav-links">
-          <a href="#projects">About</a>
-          <a href="#projects">Skills</a>
-          <a href="#about">Projects</a>
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
           <a href="#contact">Contact</a>
         </div>
       </nav>
