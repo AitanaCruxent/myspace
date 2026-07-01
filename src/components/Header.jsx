@@ -56,7 +56,7 @@ function Header() {
         </div>
 
         <div className="hero-visual" aria-hidden="true">
-          <div className="visual-orb"></div>
+          <div className="fibonacci-layer"></div>
 
           <div className="floating-tag tag-react" aria-label="React">
             <SiReact />
@@ -64,10 +64,6 @@ function Header() {
 
           <div className="floating-tag tag-django" aria-label="Django">
             <SiDjango />
-          </div>
-
-          <div className="floating-tag tag-dotnet" aria-label=".NET">
-            <SiDotnet />
           </div>
 
           <div className="floating-tag tag-sql" aria-label="SQL">
@@ -81,9 +77,12 @@ function Header() {
           <div className="floating-tag tag-html" aria-label="HTML">
             <SiHtml5 />
           </div>
+          
+          <div className="floating-tag tag-dotnet" aria-label=".NET">
+            <SiDotnet />
+          </div>
           <div className="visual-card">
-            <span>Web solutions</span>
-            <strong>Logic + creativity</strong>
+            <strong>From logic to web solutions</strong>
           </div>
         </div>
       </section>

@@ -29,7 +29,7 @@ function App() {
             <ProjectCard
               title="Ski Weather App"
               status="In progress"
-              tech="Django, JavaScript, Leaflet, Open-Meteo API"
+              tech="Django, Python, JavaScript, Leaflet, Open-Meteo API"
               description="A web application to explore ski resorts in Catalunya, including interactive maps and weather information."
               details="This project was built using Django for the backend and JavaScript with Leaflet for the frontend. It fetches weather data from the Open-Meteo API to provide real-time weather information for ski resorts."
             />
