@@ -460,13 +460,13 @@
   }
 
   .visual-card {
-    top: 80%;
-    left: 5%;
-    width: 200px;
-    padding: 6px 8px;
+    top: 86%;
+    left: 6%;
+    width: 130px;
+    padding: 4px 2px;
   }
 
   .visual-card strong {
-    font-size: 0.75rem;
+    font-size: 0.55rem;
   }
 }
