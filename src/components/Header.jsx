@@ -7,7 +7,7 @@ function Header() {
   return (
     <header className="hero">
       <nav className="navbar">
-        <span className="logo">ACM</span>
+        <span className="logo"><img src="/favicon.png" alt="Aitana Cruxent logo" /></span>
 
         <div className="nav-links">
           <a href="#about">About</a>
@@ -35,25 +35,23 @@ function Header() {
             useful and user-focused digital experiences. I consider myself as a generalist at the moment, but I am particulary interested in web development.
           </p>
 
-          <div className="hero-links-row">
-            <div className="hero-actions">
-              <a className="btn btn-primary" href="#projects">
-                View projects
-              </a>
-              <a className="btn btn-secondary" href="#contact">
-                Contact me
-              </a>
-            </div>
+          <div className="hero-actions">
+            <a className="btn btn-primary" href="#projects">
+              View projects
+            </a>
+            <a className="btn btn-secondary" href="#contact">
+              Contact me
+            </a>
+          </div>
 
-            <div className="hero-socials">
-              <a href="https://github.com/AitanaCruxent" target="_blank" rel="noreferrer">
-                GitHub
-              </a>
-              <span>·</span>
-              <a href="https://www.linkedin.com/in/aitana-cruxent-m%C3%A1rquez-71a911223/" target="_blank" rel="noreferrer">
-                LinkedIn
-              </a>
-            </div>
+          <div className="hero-socials">
+            <a href="https://github.com/AitanaCruxent" target="_blank" rel="noreferrer">
+              GitHub
+            </a>
+            <span>·</span>
+            <a href="https://www.linkedin.com/in/aitana-cruxent-m%C3%A1rquez-71a911223/" target="_blank" rel="noreferrer">
+              LinkedIn
+            </a>
           </div>
         </div>
 
