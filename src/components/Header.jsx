@@ -9,8 +9,6 @@ function Header() {
       <nav className="navbar">
         <span className="logo">ACM</span>
 
-        <p className="message">This web is still underconstuction <FaTools /></p>
-
         <div className="nav-links">
           <a href="#about">About</a>
           <a href="#skills">Skills</a>
@@ -18,6 +16,8 @@ function Header() {
           <a href="#contact">Contact</a>
         </div>
       </nav>
+
+      <p className="message">This web is still underconstuction <FaTools /></p>
 
       <section className="hero-content">
         <div className="hero-text">

@@ -162,7 +162,6 @@ function Skills() {
       <div className="skills-container">
         <div className="skills-heading">
           <p className="section-eyebrow">Technical toolkit</p>
-
           <h2>Skills</h2>
         </div>
         

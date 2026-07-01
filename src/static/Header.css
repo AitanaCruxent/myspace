@@ -15,10 +15,16 @@
 
 .message {
   color: #059669;
+  background: rgba(243, 247, 245, 0.692);
+  box-shadow: 0 8px 24px rgba(18, 55, 42, 0.08);
+  justify-self: center;
   font-size: 0.85rem;
   font-weight: 700;
   letter-spacing: 0.12em;
   text-transform: uppercase;
+  margin-bottom: 70px;
+  padding: 6px 12px;
+  border-radius: 999px;
 }
 
 /* =========================
@@ -29,7 +35,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 90px;
+  margin-bottom: 20px;
 }
 
 .logo {
@@ -361,7 +367,7 @@
 }
 
 .tag-html {
-  --x: 125px;
+  --x: 135px;
   --y: -15px;
 }
 
@@ -411,33 +417,33 @@
     font-size: 1.05rem;
   }
 
-  .tag-react {
-    --x: -95px;
-    --y: -72px;
-  }
+   .tag-react {
+  --x: -115px;
+  --y: -85px;
+}
 
-  .tag-python {
-    --x: -20px;
-    --y: 96px;
-  }
+.tag-python {
+  --x: -25px;
+  --y: 115px;
+}
 
-  .tag-django {
-    --x: 42px;
-    --y: -98px;
-  }
+.tag-django {
+  --x: 50px;
+  --y: -118px;
+}
 
-  .tag-html {
-    --x: 103px;
-    --y: -12px;
-  }
+.tag-html {
+  --x: 135px;
+  --y: -15px;
+}
 
-  .tag-dotnet {
-    --x: -103px;
-    --y: 38px;
-  }
+.tag-dotnet {
+  --x: -125px;
+  --y: 45px;
+}
 
-  .tag-sql {
-    --x: 82px;
-    --y: 72px;
-  }
+.tag-sql {
+  --x: 100px;
+  --y: 85px;
+}
 }

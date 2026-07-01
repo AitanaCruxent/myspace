@@ -21,8 +21,11 @@ function App() {
 
         <Skills /> 
 
-        <Section title="Projects" >
-          <div className="projects-grid" id="projects">
+        <Section>
+          <div className="projects-heading" id="projects">
+            <h2>Projects</h2>
+          </div>
+          <div className="projects-grid">
             <ProjectCard
               title="Ski Weather App"
               status="In progress"
