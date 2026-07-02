@@ -1,6 +1,7 @@
 import Header from './components/Header'
 import Section from './components/Section'
 import Skills from './components/Skills'
+import Projects from './components/Projects'
 import ProjectCard from './components/ProjectCard'
 import './App.css'
 
@@ -11,46 +12,39 @@ function App() {
 
       <main>
         <Section title="About me">
-          <p>
-            I am a web developer with experience in React, SharePoint,
-            Microsoft 365 environments, and process automation. I enjoy solving
-            problems, learning continuously, and creating solutions that bring
-            real value to users.
-          </p>
+        <section id="about" className="about-section">
+          <div className="section-heading">
+            <h3>Analytical mindset, creative approach.</h3>
+          </div>
+
+          <div className="about-content">
+            <div className="about-text">
+              <p>
+                I am a Mathematics graduate and junior software developer with a strong
+                interest in web technologies.
+              </p>
+
+              <p>
+                I like building digital solutions that are clear, useful and easy to
+                understand. My mathematical background helps me approach problems with
+                structure and logic, while my creative side pushes me to care about
+                design, user experience and how things feel.
+              </p>
+
+              <p>
+                At the moment, I am especially interested in web development,
+                automation and artificial intelligence, and I am looking for
+                opportunities where I can keep learning, contribute to real projects
+                and grow as a developer.
+              </p>
+            </div>
+          </div>
+        </section>
         </Section>
 
         <Skills /> 
 
-        <Section>
-          <div className="projects-heading" id="projects">
-            <h2>Projects</h2>
-          </div>
-          <div className="projects-grid">
-            <ProjectCard
-              title="Ski Weather App"
-              status="In progress"
-              tech="Django, Python, JavaScript, Leaflet, Open-Meteo API"
-              description="A web application to explore ski resorts in Catalunya, including interactive maps and weather information."
-              details="This project was built using Django for the backend and JavaScript with Leaflet for the frontend. It fetches weather data from the Open-Meteo API to provide real-time weather information for ski resorts."
-            />
-
-            <ProjectCard
-              title="Multilingual Website"
-              status="Completed"
-              tech="WordPress, Elementor, Polylang, HTML/CSS"
-              description="A freelance project where I designed and built a multilingual website from scratch."
-              details="The website was built using WordPress with the Elementor page builder and the Polylang plugin for multilingual support. I focused on creating a user-friendly design and ensuring that the site was responsive across different devices."
-            />
-
-            <ProjectCard
-              title="Microsoft 365 Solutions"
-              status="Completed"
-              tech="SharePoint Online, SPFx, React, Power Automate"
-              description="Development and automation work in Microsoft 365 environments, focused on improving internal processes and user experience."
-              details="I have developed custom solutions using SharePoint Framework (SPFx) and React, as well as automated workflows using Power Automate. These solutions aimed to streamline internal processes, enhance collaboration, and improve the overall user experience within Microsoft 365 environments."
-            />
-          </div>
-        </Section>
+        <Projects />
 
         <Section title="Contact">
           <p>You can contact me through LinkedIn, GitHub, or email.</p>
