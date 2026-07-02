@@ -34,10 +34,10 @@ const projects = [
   {
     title: "Microsoft 365 Solutions",
     status: "Professional experience",
-    image: "/projects/microsoft365.png",
+    image: null,
     tech: ["SharePoint Online", "SPFx", "React", "Power Automate", "Copilot Studio"],
     description:
-      "Development and automation work in Microsoft 365 environments, focused on improving internal processes and user experience.",
+      "Development and automation work in Microsoft 365 environments, focused on evolutions of customized webparts, AI agent creation and workflow automation",
     contribution: [
       "Developed custom SharePoint components using SPFx and React.",
       "Created automations to improve internal processes.",
@@ -72,6 +72,11 @@ function Projects() {
                     <span className="tech-pill" key={item}>{item}</span>
                   ))}
                 </div>
+                {project.image &&(
+                    <div className="project-preview">
+                        <img src={project.image} alt={`${project.title} preview`} />
+                    </div>
+                )}
             </div>
           ))}
         </div>
