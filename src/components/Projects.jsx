@@ -1,3 +1,4 @@
+import { useState } from "react";
 import Section from "./Section";
 import ProjectCard from "./ProjectCard";
 import "../static/Projects.css";
@@ -5,7 +6,7 @@ import "../static/Projects.css";
 const projects = [
   {
     title: "Ski Weather App",
-    status: "In progress",
+    status: "Working on new features",
     image: "/projects/ski-weather.png",
     tech: ["Django", "Python", "JavaScript", "Leaflet", "Open-Meteo API"],
     description:
@@ -19,28 +20,29 @@ const projects = [
   },
   {
     title: "Multilingual Website",
-    status: "Completed",
+    status: "In the translation phase at the moment",
     image: "/projects/multilingual-website.png",
     tech: ["WordPress", "Elementor", "Polylang", "HTML/CSS", "SEO"],
     description:
-      "A freelance project where I designed and built a multilingual website from scratch for a Hotel.",
+      "A freelance project where I designed and built a multilingual website from scratch for a Hotel and Restaurant.",
     contribution: [
       "Defined the website structure and visual layout.",
-      "Built the site using WordPress, Elementor and custom CSS.",
+      "Built the site using WordPress, Elementor and custom HTML/CSS.",
       "Configured multilingual content using Polylang.",
       "Worked on responsive design, hosting setup and basic SEO."
     ],
   },
   {
     title: "Microsoft 365 Solutions",
-    status: "Professional experience",
+    status: "Several independent projects",
     image: null,
     tech: ["SharePoint Online", "SPFx", "React", "Power Automate", "Copilot Studio"],
     description:
       "Development and automation work in Microsoft 365 environments, focused on evolutions of customized webparts, AI agent creation and workflow automation",
     contribution: [
-      "Developed custom SharePoint components using SPFx and React.",
+      "Developed continuous improvements tocustom SharePoint components using SPFx and React.",
       "Created automations to improve internal processes.",
+      "Developed AI agents and workflows using Copilot Studio and Power Automate.",
       "Worked with Microsoft 365 tools in professional client environments.",
       "Focused on usability, maintainability and business value."
     ],
@@ -48,6 +50,8 @@ const projects = [
 ];
 
 function Projects() {
+    const [selectedProject, setSelectedProject] = useState(null);
+
   return (
     <Section>
       <div className="projects-section" id="projects">
@@ -59,18 +63,28 @@ function Projects() {
           </p>
         </div>
 
+        {selectedProject ? (
+            <div className="project-details">
+            <button
+              className="project-details-close"
+              onClick={() => setSelectedProject(null)}
+            >
+              Back to projects
+            </button>
+             <ProjectCard {...selectedProject} />
+          </div>
+        ) : (
         <div className="projects-grid">
           {projects.map((project) => (
             <div key={project.title} className="project-card-wrapper">
                 <div className= "project-header">
                     <h3 className="project-title">{project.title}</h3>
-                    <span className="project-status">{project.status}</span>
                 </div>
                 <p className="project-description">{project.description}</p>
-                <div className="project-tech">
-                  {project.tech.map((item) => (
-                    <span className="tech-pill" key={item}>{item}</span>
-                  ))}
+                <div className="details-button-wrapper">
+                  <button className="details-button" onClick={() => setSelectedProject(project)}>
+                    View Details
+                  </button>
                 </div>
                 {project.image &&(
                     <div className="project-preview">
@@ -80,6 +94,7 @@ function Projects() {
             </div>
           ))}
         </div>
+        )}
       </div>
     </Section>
   );

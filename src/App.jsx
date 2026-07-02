@@ -47,7 +47,9 @@ function App() {
         <Projects />
 
         <Section title="Contact">
-          <p>You can contact me through LinkedIn, GitHub, or sent me an email to aitana.cruamr@gmail.com.</p>
+          <section id="contact" className="contact-section">
+          <p>You can contact me through LinkedIn, GitHub, or sent me an email to aitana.crumar@gmail.com.</p>
+          </section>
         </Section>
       </main>
     </div>

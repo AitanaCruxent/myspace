@@ -9,10 +9,12 @@ function ProjectCard({
   contribution,
 }) {
   return (
-    <article className="project-card">
-      <div className="project-image-wrapper">
-        <img src={image} alt={`${title} preview`} className="project-image" />
-      </div>
+    <article className={`project-card ${!image ? "no-image" : ""}`}>
+      {image && (
+        <div className="project-image-wrapper">
+          <img src={image} alt={`${title} preview`} className="project-image" />
+        </div>
+      )}
 
       <div className="project-content">
         <div className="project-header">
@@ -23,7 +25,7 @@ function ProjectCard({
         <p className="project-description">{description}</p>
 
         <div className="project-tech">
-          {tech.map((item) => (
+          {tech?.map((item) => (
             <span key={item}>{item}</span>
           ))}
         </div>
@@ -31,7 +33,7 @@ function ProjectCard({
         <div className="project-contribution">
           <h4>What I worked on</h4>
           <ul>
-            {contribution.map((item) => (
+            {contribution?.map((item) => (
               <li key={item}>{item}</li>
             ))}
           </ul>
