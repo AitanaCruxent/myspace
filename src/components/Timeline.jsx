@@ -5,7 +5,7 @@ import Section from "./Section";
 const timelineItems = [
   {
     id: "math",
-    year: "2018 - 2023",
+    year: "2018 - 2022",
     title: "Mathematics Background",
     label: "Mathematics",
     description:
@@ -13,13 +13,22 @@ const timelineItems = [
     skills: ["Logic", "Problem-solving", "Abstract thinking", "Data analysis"],
   },
   {
-    id: "mountain",
-    year: "2022 - 2024",
-    title: "Mountain & Outdoor Experience",
-    label: "Mountain guide",
+    id: "innovamat",
+    year: "2021 - 2023",
+    title: "Customer Success Manager and Account Manager",
+    label: "Customer Success",
     description:
-      "I worked in mountain and canyoning environments, developing communication, responsibility, adaptability and decision-making under pressure.",
-    skills: ["Communication", "Leadership", "Adaptability", "Risk management"],
+      "I worked as a Customer Success Manage and Account Executive at Innovamat. Innovamat buils a didactic maths proposla for schools with the goal of making maths reachable by everybody.",
+    skills: ["Communication", "Maths", "Didactics", "Adaptability", "Management"],
+  },
+  {
+    id: "international",
+    year: "2023 - 2024",
+    title: "International Experience",
+    label: "Working abroad",
+    description:
+      "I worked in Japan as a Guest Service Agent in a Ski Lodge where I developed communication skills, responsibility, adaptability and decision-making.",
+    skills: ["Communication", "Leadership", "Adaptability", "Management"],
   },
   {
     id: "raona",
