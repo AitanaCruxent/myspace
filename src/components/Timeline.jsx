@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Section from "./Section";
-//import "../static/Timeline.css";
+import "../static/Timeline.css";
 
 const timelineItems = [
   {
@@ -23,7 +23,7 @@ const timelineItems = [
   },
   {
     id: "international",
-    year: "2023 - 2024",
+    year: "2023 - 2025",
     title: "International Experience",
     label: "Working abroad",
     description:
@@ -32,7 +32,7 @@ const timelineItems = [
   },
   {
     id: "raona",
-    year: "2026",
+    year: "2025-2026",
     title: "Web Development in a Professional Environment",
     label: "Raona",
     description:
@@ -70,7 +70,7 @@ function Timeline() {
           <h2>Timeline</h2>
           <p>
             A short overview of the path that connects my background in
-            mathematics, outdoor experience and web development.
+            mathematics, international experience and web development.
           </p>
         </div>
 
