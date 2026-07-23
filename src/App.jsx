@@ -3,6 +3,7 @@ import Section from './components/Section'
 import Skills from './components/Skills'
 import Projects from './components/Projects'
 import ProjectCard from './components/ProjectCard'
+import Timeline from './components/Timeline'
 import './App.css'
 
 function App() {
@@ -41,6 +42,8 @@ function App() {
           </div>
         </section>
         </Section>
+
+        <Timeline />
 
         <Skills /> 
 
