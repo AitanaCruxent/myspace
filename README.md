@@ -12,15 +12,10 @@ Interactive project cards
 Smooth navigation between sections
 Links to GitHub, LinkedIn and project demos
 
-## Run locally
-
-git clone <https://github.com/AitanaCruxent/myspace> cd <myspace> npm install npm run dev
-
 ## Future improvements
 
 This is an initial version of the portfolio. I plan to continue improving its design, adding more JavaScript interactions and expanding the project details.
 
 ### Author
 
-Aitana Cruxent
-aitanacruxent.vercel.app
+Aitana Cruxent - aitanacruxent.vercel.app
