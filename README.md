@@ -1,16 +1,26 @@
-# React + Vite
+# Personal Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is the first version of my personal portfolio, built to present my experience, technical skills and web development projects.
 
-Currently, two official plugins are available:
+The website was developed using React, JavaScript, HTML and CSS, with Vite as the development environment. It includes sections about me, my skills, featured projects and contact information.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Main features
 
-## React Compiler
+Responsive design
+Reusable React components
+Interactive project cards
+Smooth navigation between sections
+Links to GitHub, LinkedIn and project demos
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Run locally
 
-## Expanding the ESLint configuration
+git clone <https://github.com/AitanaCruxent/myspace> cd <myspace> npm install npm run dev
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Future improvements
+
+This is an initial version of the portfolio. I plan to continue improving its design, adding more JavaScript interactions and expanding the project details.
+
+### Author
+
+Aitana Cruxent
+aitanacruxent.vercel.app
