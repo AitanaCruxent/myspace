@@ -4,15 +4,35 @@ function ProjectCard({
   title,
   status,
   image,
+  images = [],
   tech,
   description,
   contribution,
 }) {
+  const hasImages = images.length >0;
+
   return (
-    <article className={`project-card ${!image ? "no-image" : ""}`}>
-      {image && (
-        <div className="project-image-wrapper">
-          <img src={image} alt={`${title} preview`} className="project-image" />
+    <article className={`project-card ${!hasImages ? "no-image" : ""}`}>
+      {hasImages && (
+        <div className="project-gallery">
+          <img
+          src={images[0]}
+            alt={`${title} main preview`}
+            className="project-main-image"
+            />
+
+          {images.length > 1 && (
+            <div className="project-gallery-grid">
+              {images.slice(1).map((item, index) => (
+                <img
+                  key={item}
+                  src={item}
+                  alt={`${title} screenshot ${index + 2}`}
+                  className="project-gallery-image"
+                />
+              ))}
+            </div>
+          )}
         </div>
       )}
 

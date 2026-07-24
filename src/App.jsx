@@ -4,7 +4,8 @@ import Skills from './components/Skills'
 import Projects from './components/Projects'
 import ProjectCard from './components/ProjectCard'
 import Timeline from './components/Timeline'
-import RevealOnScroll from "./components/RevealOnScroll";
+import RevealOnScroll from "./components/RevealOnScroll"
+import Contact from "./components/Contact"
 import './App.css'
 
 function App() {
@@ -59,11 +60,9 @@ function App() {
           <Projects />
         </RevealOnScroll>
 
-        <Section title="Contact">
-          <section id="contact" className="contact-section">
-          <p>You can contact me through LinkedIn, GitHub, or sent me an email to aitana.crumar@gmail.com.</p>
-          </section>
-        </Section>
+        <RevealOnScroll>
+          <Contact />
+        </RevealOnScroll>
       </main>
     </div>
   )
